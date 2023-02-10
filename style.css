@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'silkscreen';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* delizar cliques do menu */
+    scroll-behavior: smooth;
+}
+/* MENU */
+.cabecalho{
+    background: #211e26;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.cabecalho header{
+    max-width: 1100;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.cabecalho header .logo a{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 36px;
+    color: #9358ac;
+    text-decoration: none;
+}
+.cabecalho header ul{
+    display: flex;
+    list-style: none;
+}
+.cabecalho header nav ul li a{
+    text-align: none;
+    color: #ffff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .3s;
+    text-decoration: none;
+}
+.cabecalho header nav ul li a:hover{
+    color: #9358ac;
+}
+.responsivo{
+    background-color: #211e26;
+    color: #ffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* INICIO */
+.inicio{
+    background: linear-gradient(to top, rgba(33, 30, 38, 0.8), rgb(34, 30, 38)),
+    url(image/fundo2.gif);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .banner{
+    padding: 20px;
+    background-color: #211e26;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .banner img{
+    margin-top: 40px;
+    border: 10px solid #9358ac;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .banner h1{
+    margin-top: 40px;
+    font-size: 17px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 7px;
+}
+.inicio .banner h2{
+    font-size: 11px;
+    font-family: 'Press Start 2P', cursive;;
+    font-weight: normal;
+}
+.inicio .banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 40px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .banner .redes a:hover{
+    background-color: #9358ac;
+}
+/* OBJETIVOS */
+.obs{
+    background-color: #211e26;
+    color: #fff;
+    padding: 50px 20px;
+}
+.obs .info{
+    max-width: 1100px;
+    margin: auto;
+}
+.obs h2{
+    font-size: 30px;
+    font-family: 'Press Start 2p';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.obs .info p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.obs .info p span{
+    color: #9358ac;
+    font-weight: bold;
+}
+.obs .pessoal{
+    display: flex;
+}
+.obs .pessoal .int{
+    width: 50%;
+}
+.obs .pessoal .int h3{
+    font-size: 28px;
+    font-family: 'silkscreen';
+    margin-bottom: 25px;
+}
+.obs .pessoal .int ul{
+    list-style: none;
+}
+.obs .pessoal .int ul li{
+    margin: 12px 0;
+}
+.obs .pessoal .int ul li strong{
+    display: inline-block;
+    color: #9358ac;
+    width: 100px;
+}
+.obs .pessoal .int ul li span{
+    background-color: #9358ac;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.obs .pessoal .int .intes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.obs .pessoal .int .intes .int-icons{
+    width: 100px;
+    height: 100px;
+    background-color: #302541;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.obs .pessoal .int .intes .int-icons:hover{
+    background-color: #9358ac;
+}
+.obs .pessoal .int .intes .int-icons i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+/* EXPERIENCIAS */
+.exp{
+    background-color: #211e26;
+    color: #fff;
+    padding: 50px 20px;
+}
+.exp .exp1{
+    max-width: 1100px;
+    margin: auto;
+}
+.exp h2{
+    font-size: 30px;
+    font-family: 'press start 2p';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.exp .exp2{
+    display: flex;
+}
+.exp .exp2 .hab1{
+    width: 50%;
+    padding: 0 20px;
+}
+.exp .exp2 .hab1 h3{
+    font-size: 28px;
+    font-family: 'silkscreen';
+    margin-bottom: 25px;
+}
+.exp .hab2 > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.exp .hab2 .barra-hab{
+    height: 8px;
+    width: 80%;
+    background-color: #161317;
+    position: relative;
+    margin-bottom: 30px;
+}
+.exp .hab2 .prog{
+    background-color: #9358ac;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.exp .hab2 .barra-hab span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #9358ac;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+/* classe agregada ao JS */
+.exp .hab1 .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.exp .hab1 .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss{
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+.exp .hab1 .photoshop{
+    width: 0%;
+    animation: 2s photoshop forwards;
+}
+@keyframes photoshop {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.exp .hab1 .illustrator{
+    width: 0%;
+    animation: 2s illustrator forwards;
+}
+@keyframes illustrator {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.exp .hab1 .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+.exp .hab1 .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+@keyframes java{
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+.exp .hab2 .comunicacao{
+    width: 0%;
+    animation: 2s comunicacao forwards;
+}
+@keyframes comunicacao {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.exp .hab2 .trabalho{
+    width: 0%;
+    animation: 2s trabalho forwards;
+}
+@keyframes trabalho{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+.exp .hab2 .criatividade{
+    width: 0%;
+    animation: 2s criatividade forwards;
+}
+@keyframes criatividade{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.exp .hab2 .dedicacao{
+    width: 0%;
+    animation: 2s dedicacao forwards;
+}
+@keyframes dedicacao{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.exp .hab2 .gerenciamento{
+    width: 0%;
+    animation: 2s gerenciamemto forwards;
+}
+@keyframes ger{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+/* PROJETOS */
+.proj{
+    background-color: #211e26;
+    color: #fff;
+    padding: 50px 20px;
+}
+.proj .proj1{
+    max-width: 1100px;
+    margin: auto;
+}
+.proj h2{
+    font-size: 30px;
+    font-family: 'press start 2p';
+    text-align: center;
+    padding: 20px 0;
+}
+.proj .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.proj .galeria .proj2{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.proj .galeria .proj2 img{
+    width: 100%;
+    display: block;
+}
+.proj .galeria .proj2 .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(82, 50, 124, 0.8), rgba(59, 25, 96, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 15px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.proj .galeria .proj2 .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.proj .galeria .proj2 .overlay:hover{
+    opacity: 1;
+}
+.proj .galeria .proj2 .overlay:hover h3{
+    margin-bottom: 0px;
+}
+footer{
+    background-color: #211e26;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .subir{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #9358ac;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* RESPONSIVIDADE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .responsivo{
+        display: block;
+    }
+    nav.responsivo{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsivo ul{
+        display: block !important;
+    }
+    nav.responsivo ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .obs .pessoal{
+        display: block;
+    }
+    .obs .pessoal .int{
+        width: fit-content;
+    }
+
+    .exp .exp2{
+        display: block;
+    }
+    .exp .exp2 .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-hab{
+        width: 100%;
+    }
+
+    .proj .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proj2{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proj2 img{
+        width: 100%;
+    }
+}
